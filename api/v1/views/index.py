@@ -16,8 +16,8 @@ def details() -> str:
     Return:
       - User object JSON represented
     """
-    slack_name = request.args.get('slack_name')
-    track = request.args.get('track')
+    slack_name = request.args.get('slack_name', '')
+    track = request.args.get('track', '')
     current_day = datetime.utcnow().strftime('%A')
     utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     github_file_url = "https://github.com/110nard0/hngx_stage_1/blob/main/api/v1/app.py"
