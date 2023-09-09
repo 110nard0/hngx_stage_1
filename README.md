@@ -4,6 +4,7 @@ Welcome to Stage One.
 :dart: Objective
 Create and host an endpoint using any programming language of your choice.
 The endpoint should take two GET request query parameters and return specific information in JSON format.
+
 :spiral_note_pad: Requirements
 The information required includes:
 Slack name
@@ -13,6 +14,7 @@ Track
 The GitHub URL of the file being run
 The GitHub URL of the full source code.
 A  Status Code of Success
+
 JSON
 {
   "slack_name": "example_name",
@@ -23,6 +25,7 @@ JSON
   "github_repo_url": "https://github.com/username/repo",
   "status_code": 200
 }
+
 Acceptance Criteria
 Endpoint Creation: Provide a publicly accessible endpoint.
 GET Parameters: The endpoint should accept two GET request query parameters: slack_name and track.
@@ -35,6 +38,7 @@ GitHub File URL: Include a direct link to the specific file in the GitHub reposi
 GitHub Repo URL: Include a link to the main page of the GitHub repository containing the project's entire source code.
 Status Code: Return 200 as Integer.
 JSON Format: The endpoint's response should adhere to the specified JSON format.
+
 Testing: Before submission:
 Ensure the endpoint is accessible.
 Check the returned JSON against the defined format.
