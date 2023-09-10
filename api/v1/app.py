@@ -8,12 +8,12 @@ app = Flask(__name__)
 app.register_blueprint(app_views)
 
 
+@app.route('/')
+def hello_world():
+    return 'Hello from HNGX!'
+
+
 @app.errorhandler(404)
 def not_found(error) -> str:
     """Handle 404 errors"""
     return jsonify({"error": "Not found"}), 404
-
-
-if __name__ == "__main__":
-    """Run Flask app"""
-    app.run(host="0.0.0.0", port=5000)
