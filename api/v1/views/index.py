@@ -21,8 +21,7 @@ def details() -> str:
     current_day = datetime.utcnow().strftime('%A')
     utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     github_file_url = "https://github.com/110nard0/hngx_stage_1/blob/main/api/v1/app.py"
-    "https://github.com/110nard0/hngx_backend/blob/main/stage_1/api/v1/app.py"
-    github_repo_url = "https://github.com/110nard0/hngx_stage_1.git"
+    github_repo_url = "https://github.com/110nard0/hngx_stage_1"
     status_code = 200
 
     return jsonify({
